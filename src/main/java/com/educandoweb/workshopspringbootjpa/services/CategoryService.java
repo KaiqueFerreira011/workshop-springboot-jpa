@@ -1,7 +1,6 @@
 package com.educandoweb.workshopspringbootjpa.services;
 
 import com.educandoweb.workshopspringbootjpa.entities.Category;
-import com.educandoweb.workshopspringbootjpa.entities.User;
 import com.educandoweb.workshopspringbootjpa.repositories.CategoryRepository;
 import java.util.List;
 import java.util.Optional;
