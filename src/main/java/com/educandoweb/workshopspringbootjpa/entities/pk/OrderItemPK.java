@@ -2,6 +2,7 @@ package com.educandoweb.workshopspringbootjpa.entities.pk;
 
 import com.educandoweb.workshopspringbootjpa.entities.Order;
 import com.educandoweb.workshopspringbootjpa.entities.Product;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
@@ -17,6 +18,7 @@ public class OrderItemPK {
     @JoinColumn(name = "product_id")
     private Product product;
 
+    @JsonIgnore
     public Order getOrder() {
         return order;
     }
