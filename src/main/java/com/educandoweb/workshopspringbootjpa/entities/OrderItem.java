@@ -27,7 +27,7 @@ public class OrderItem {
         this.quantity = quantity;
         this.price = price;
     }
-    
+   
     public Product getProduct(){
         return id.getProduct();
     }
@@ -36,6 +36,7 @@ public class OrderItem {
         id.setProduct(product);
     }
     
+    @JsonIgnore
     public Order getOrder(){
         return id.getOrder();
     }
